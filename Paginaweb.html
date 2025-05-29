@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Tienda Estilo Único">
+    <meta property="og:type" content="website">
+    <title>Selecto clothes</title>
+    <link href="style.css" rel="stylesheet">
+    <link type="image/png" href="images/logo.jpg" rel="icon">
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="nav-selecto-c" role="navigation" aria-label="Menú principal">
+        <div class="name-logo">
+          <figure>
+            <img class="logo-sc" src="images/logo.jpg" alt="logo-negocio">
+          </figure>
+          <h1 class="nombre-tienda">Selecto clothes</h1>
+        </div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hombre">Hombre</a></li>
+          <li><a href="#mujer">Mujer</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="productos contenedor-productos-hombre" id="hombre" aria-labelledby="heading-hombre">
+        <h2 id="heading-hombre">Colección Hombre</h2>
+        <div class="productos-lista-hombre">
+          <article class="producto" data-id="1">
+            <img class="imagen-producto" src="images/Hombre1.jpg" alt="Camisa casual para hombre color azul">
+            <h3>Camisa Casual Hombre</h3>
+            <p class="precio">$89.900</p>
+            <button class="agregar-carrito" aria-label="Agregar Camisa Casual Hombre al carrito">
+              Agregar al carrito
+            </button>
+          </article>
+
+          <article class="producto" data-id="3">
+            <img class="imagen-producto" src="images/Pantalon1.jpg" alt="Pantalón jeans para hombre">
+            <h3>Pantalón Jeans Hombre</h3>
+            <p class="precio">$119.900</p>
+            <button class="agregar-carrito" aria-label="Agregar Pantalón Jeans Hombre al carrito">
+              Agregar al carrito
+            </button>
+          </article>
+
+          <article class="producto" data-id="4">
+            <img class="imagen-producto" src="images/Gorra.jpg" alt="Gorra de hombre">
+            <h3>Gorra</h3>
+            <p class="precio">$159.900</p>
+            <button class="agregar-carrito" aria-label=" agregar-carrito de hombre al carrito">
+              Agregar al carrito
+            </button>
+          </article>
+          <article class="producto" data-id="4">
+            <img class="imagen-producto" src="images/Pantaloneta.jpg" alt="Pantaloneta de hombre">
+            <h3>Pantaloneta</h3>
+            <p class="precio">$159.900</p>
+            <button class="agregar-carrito" aria-label="Agregar Pantaloneta de Hombre al carrito">
+              Agregar al carrito
+            </button>
+          </article>
+       
+        </div>
+      </section>
+
+      <section class="productos contenedor-productos-mujer" id="mujer" aria-labelledby="heading-mujer">
+        <h2 id="heading-mujer">Colección Mujer</h2>
+        <div class="productos-lista-mujer">
+          <article class="producto" data-id="2">
+            <img class="imagen-producto" src="images/vestido1.jpg" alt="Vestido elegante para mujer color rojo">
+            <h3>Vestido Elegante Mujer</h3>
+            <p class="precio">$129.900</p>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </article>
+
+          <article class="producto" data-id="5">
+            <img class="imagen-producto" src="images/blusa1.jpg" alt="Blusa moderna para mujer">
+            <h3>Blusa Moderna Mujer</h3>
+            <p class="precio">$79.900</p>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </article>
+
+          <article class="producto" data-id="6">
+            <img class="imagen-producto" src="images/falda1.jpg" alt="Falda casual para mujer">
+            <h3>Falda Casual Mujer</h3>
+            <p class="precio">$99.900</p>
+            <button class="agregar-carrito">Agregar al carrito</button>
+          </article>
+
+            <article class="producto" data-id="6">
+            <img class="imagen-producto" src="images/Collar.jpg" alt="Collar">
+            <h3>Collar Mujer</h3>
+            <p class="precio">$99.900</p>
+            <button class="agregar-carrito collar" aria-label="Agregar collar mujer al carrito ">
+              Agregar al carrito
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="contenedor-carrito" id="carrito" aria-label="Carrito de compras">
+      <h2>Carrito 🛒</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: $0</p>
+    </aside>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Selecto clothes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
